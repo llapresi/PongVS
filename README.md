@@ -1,5 +1,5 @@
 # PongVS
-Singleplayer and Multiplayer HTML5 Pong game created for IGME 330.
+Singleplayer and Multiplayer HTML5 Pong game created for IGME 330. Play at (https://llapresi.github.io/projects/pongvs/)[https://llapresi.github.io/projects/pongvs/]
 * New game design implemented</li>
 * Two new object literal constructors created (Player and Ball)</li>
 * AI opponent + AI logic implemented</li>
