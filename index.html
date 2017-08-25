@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<style>
+		canvas {
+			padding: 0;
+			margin: auto;
+			display: block;
+			width: 1280px;
+			height: 720px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			font-family: deltaray;
+		}
+		
+		#load {
+			font-family: deltaray;
+			visibility: hidden;
+			height: 0px;
+		}
+		
+		#button1 {
+			font-size: 24pt;
+			border-radius: 15px;
+			position: absolute;
+			top: 150px;
+			left: 270px;
+			z-index: 1;
+		}
+		
+		#button1:hover {
+			background-color: #fff;
+		}
+		
+		button:focus {
+			outline: 0;
+		}
+		
+		#audioControls {
+			display: none;
+		}
+		
+		@font-face {
+			font-family: deltaray;
+			src: url('media/font/deltav2-webfont.ttf')
+		}
+		#menu {
+			text-align: center;
+			margin-top: 36px;
+			font-size: 24px;
+			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   			font-weight: 300;
+		}
+
+		#bottom_menu {
+  			position: absolute;
+  			right: 0;
+  			bottom: 0;
+  			left: 0;
+  			padding: 1rem;
+  			background-color: #efefef;
+  			text-align: center;
+
+			font-size: 14px;
+			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   			font-weight: 300;
+		}
+	</style>
+	<title>Pong Vs.</title>
+</head>
+
+<body>
+	<canvas width="1280" height="720">
+		Get a real browser!
+	</canvas>
+	<div id="load">words</div>
+	<script src='js/utilities.js'></script>
+	<script src='js/keys.js'></script>
+	<script src='js/loader.js'></script>
+	<script src='js/sound.js'></script>
+	<script src='js/emitter.js'></script>
+	<script src='js/main.js'></script>
+
+	<section id="audioControls">
+		<audio id="bgAudio" src="media/background.mp3" controls loop></audio>
+		<audio id="effectAudio" controls></audio>
+	</section>
+	<div id="menu">
+		Mode: <select name='select_mode' id='mode_select'>
+    		<option value='0' selected>Easy (AI)</option>
+    		<option value='1'>Medium (AI)</option>
+    		<option value='2'>Hard (AI)</option>
+    		<option value='3'>Multiplayer</option>
+		</select>
+		<input type="checkbox" id="ghostball_check">Show Ghost Ball
+	</div>
+	<div id="bottom_menu">
+		<a href="documentation.html">Documentation</a>
+	</div>
+</body>
+
+</html>
